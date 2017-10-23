@@ -1,0 +1,49 @@
+.heading{
+	background-color :rgb(22,80,230);
+
+}
+#OfekTwitter{
+	color: white ;
+	font-size:20px;
+}
+.Hbutton{
+	border:transparent;
+	color:white;
+	background-color:transparent ;
+	text-align:center;
+	margin-left :10px;
+	float:right;
+	position:relative;
+
+
+
+}
+.SignInWin{
+	border-radius:6px;
+	width: 300px;
+	border: 1px solid black;
+	margin: 25px;
+	margin-top:100px;
+}
+#sign{
+	border-radius: 2px;
+	background-color:rgb(22,80,230);
+	text-align:left;
+	color:white;
+}
+p#sign{margin:0;
+font-size:20px;}
+
+#inField{
+	margin-top: 10px;
+margin-bottom:5px;
+}
+#inField2{
+	margin-top:10px;
+}
+
+#submit{
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:10px;
+}
