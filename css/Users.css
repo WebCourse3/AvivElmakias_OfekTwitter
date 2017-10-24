@@ -6,14 +6,8 @@
 	font-size:20px;
 }
 
-.Hbutton{
-	border:transparent;
-	color:white;
-	background-color:transparent ;
-	text-align:center;
-	margin-left :10px;
+.setR{
 	float:right;
-	position:relative;
 }
 
 #comment{
@@ -26,8 +20,3 @@
 #immg{
 	float:left;
 }
-a{
-	text-decoration: none;
-	font-size:14px;
-}
-/*lijljl*/
