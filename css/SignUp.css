@@ -1,15 +1,9 @@
-
-#ofekimg {
-	float: left;
- }
-
-.panel{
-	width:100%;
-}
-
 .details{
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:5%;
 	width:70%;
+}
+#submit{
+	margin-top:5%;
 }

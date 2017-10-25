@@ -1,0 +1,14 @@
+
+a{
+	text-decoration: none;
+	font-size:14px;
+
+}
+
+.navbar{
+	position:relative;
+}
+.brand{
+	margin-top:7%;
+	display:block;
+}

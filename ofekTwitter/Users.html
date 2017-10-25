@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/Users.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Style.css">
+	<link rel="stylesheet" href="../css/Users.css">
 	<title>Index</title>
+
 </head>
 <body>
-<header class="heading">
-	<img src="../images/ofek.png" width="20" height="20">
-	<span id="OfekTwitter">Ofek Twitter</span>
-	<a href="../ofekTwitter/index.html" class="Hbutton">Users</a>
-	<a href="../ofekTwitter/SignIn.html" class="Hbutton">SignIn</a>
-	<a href="../ofekTwitter/Users.html" class="Hbutton">Chat</a>
-</header>
-<div>
-	<input id="comment" type="text" placeholder="tweet comment.." >
-	<button type="button">publish</button>
-</div>
-<div class="chat">
-	<img id="immg" src="../images/User.png" width="55" height="55">
-	<span id="JBcomment">James Bond says:<br>blabla</span>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class="pull-left brand" id="ofekimg" class="img-responsive" src="../images/ofek.png" width="30"
+			     height="30">
+			<a class="navbar-brand" href="Index.html">OfekTwitter</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/SignIn.html">SignIn</a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/Users.html">Users</a>
+				</li>
+			</ul>
 
 
+		</div>
+	</div>
+</nav>
+
+<div class="filter">
+	<label id="userName">Filter By:</label>
+	<input for="UserName" type="text" name="filter-by" placeholder="UserName">
+	<button type="button">Ok</button>
+	<br><br>
 </div>
+<div class="row ">
+	<div class="col-xs-9">
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Follow</button>
+			<br>
+			<span> Marty-McFly</span>
+		</div>
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Follow</button>
+			<br>
+			<span> James-Bond</span>
+		</div>
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Unollow</button>
+			<br>
+			<span> Janis-Joplin</span>
+		</div>
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Follow</button>
+			<br>
+			<span> Mark-Twain</span>
+		</div>
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Follow</button>
+			<br>
+			<span> Albert Einstein</span>
+		</div>
+		<div class="avatars col-xs-1 thumbnail">
+			<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+			<button class="btn-primary" type="button">Follow</button>
+			<br>
+			<span> Bill-Gates</span>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="avatars col-xs-1 thumbnail">
+					<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+					<button class="btn-primary" type="button">Follow</button>
+					<br>
+					<span> Frodo</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-2 followees panel panel-default ">
+		<div id="foloweesPics" class="row">
+			<h4>Followees</h4>
+			<div class="avatars thumbnail col-xs-6 ">
+				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+				<button class="btn-primary" type="button">Follow</button>
+				<br>
+				<span> James-Bond</span>
+			</div>
+			<div class="avatars thumbnail col-xs-6">
+				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
+				<button class="btn-primary" type="button">Follow</button>
+				<br>
+				<span> James-Bond</span>
+			</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
