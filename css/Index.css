@@ -4,3 +4,14 @@
 
 #Comment{
 	height:100px;}
+
+.post img {
+	float:left;
+	margin-right: 1%;
+}
+.post ul li {
+	list-style-type: none;
+}
+.post{
+	margin-top:10px;
+}
