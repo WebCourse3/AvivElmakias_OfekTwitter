@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<title>Sign In</title>
 	<link rel="stylesheet" type="text/css" href="../css/Index.css">
-	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Style.css">
 </head>
 <body>
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<img class="pull-left brand" id="ofekimg" class="img-responsive" src="../images/ofek.png" width="30" height="30" >
-			<a class="navbar-brand" href="../ofekTwitter/Users.html">OfekTwitter</a>
+			<img class="pull-left brand" id="ofekimg" class="img-responsive" src="../images/ofek.png" width="30"
+			     height="30">
+			<a class="navbar-brand" href="../ofekTwitter/Index.html">OfekTwitter</a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li >
+				<li>
 					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
 				</li>
-				<li >
+				<li>
 					<a href="../ofekTwitter/SignIn.html">SignIn</a>
 				</li>
 				<li>
-					<a href="../ofekTwitter/Index.html">Users</a>
+					<a href="Users.html">Users</a>
 				</li>
 			</ul>
 
@@ -33,63 +34,21 @@
 	</div>
 </nav>
 
-<div class="filter">
-	filter by: <input id="UserName" type="text" name="filter-by" placeholder="UserName">
-	<button type="button">Ok</button> <br><br>
-</div>
-<div class="row ">
-	<div class="col-xs-10">
- <div class="avatars col-xs-1 thumbnail">
-		 <img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-		 <button class="btn-primary" type="button">Follow</button><br>
-		 <span> Marty-McFly</span>
- </div>
-			<div class="avatars col-xs-1 thumbnail">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Follow</button><br>
-				<span> James-Bond</span>
-			</div>
-			<div class="avatars col-xs-1 thumbnail">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Unollow</button><br>
-				<span> Janis-Joplin</span>
-			</div>
-			<div class="avatars col-xs-1 thumbnail">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Follow</button><br>
-				<span> Mark-Twain</span>
-			</div>
-			<div class="avatars col-xs-1 thumbnail">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Follow</button><br>
-				<span> Albert Einstein</span>
-			</div>
-			<div class="avatars col-xs-1 thumbnail">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Follow</button><br>
-				<span> Bill-Gates</span>
-			</div>
-	`       </div>
-				<div class="col-xs-1 followees thumbnail ">
-					<h4>Followees</h4>
-					<div class="avatars thumbnail">
-						<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-						<button class="btn-primary" type="button">Follow</button><br>
-						<span> James-Bond</span>
-					</div>
-				</div>
-</div>
+<div class="container">
+	<div class="row">
+		<div>
+			<label for="Comment"></label>
+			<input id="Comment" type="text" class="form-control" placeholder="Tweet Comment.." name="Comment">
+			<button id="publish" class="btn-primary right" type="button">publish</button>
+		</div>
 	</div>
 
-<div class="row">
-			<div class="avatars col-lg-1">
-				<img class="img-thumbnail" src="../images/User.png" width="55" height="55"><br>
-				<button class="btn-primary" type="button">Follow</button><br>
-				<span> Frodo</span>
-			</div>
 </div>
+<div class="chat">
+	<img id="immg" src="../images/User.png" width="55" height="55">
+	<span id="JBcomment">James Bond says:<br>blabla</span>
 
 
-
+</div>
 </body>
 </html>

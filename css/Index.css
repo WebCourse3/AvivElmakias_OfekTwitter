@@ -1,35 +1,6 @@
-.heading {
-	background-color: rgb(22, 80, 230);
+#publish{
+	float:right;
 }
 
-.navbar {
-	position: relative;
-	background-color: rgb(22, 80, 230);
-}
-
-.brand {
-	margin-top: 7%;
-	display: block;
-}
-
-.filter {
-	position: relative;
-	top: 20px;
-	left: 70px;
-}
-
-.avatars {
-	margin-left: 3%;
-	margin-top:5%;
-	text-align: center;
-
-}
-
-span {
-	font-size: 12px;
-}
-
-#followees {
-	margin-right:50%;
-}
-
+#Comment{
+	height:100px;}

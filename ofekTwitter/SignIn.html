@@ -8,32 +8,56 @@
 	<link rel="stylesheet" type="text/css" href="../css/Style.css">
 </head>
 <body>
-<header class="heading">
-	<img id="ofekimg" class="img-responsive" src="../images/ofek.png" width="20" height="20" >
-	<a href="../ofekTwitter/Users.html" class="Hbutton">OfekTwitter</a>
-	<a href="../ofekTwitter/Index.html" class="Hbutton setR">Users</a>
-	<a href="../ofekTwitter/SignIn.html" class="Hbutton setR">SignIn</a>
-	<a href="../ofekTwitter/SignUp.html" class="Hbutton setR">SignUp</a>
-</header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class="pull-left brand" id="ofekimg" class="img-responsive" src="../images/ofek.png" width="30"
+			     height="30">
+			<a class="navbar-brand" href="Index.html">OfekTwitter</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/SignIn.html">SignIn</a>
+				</li>
+				<li>
+					<a href="Users.html">Users</a>
+				</li>
+			</ul>
+
+
+		</div>
+	</div>
+</nav>
 
 <div class="container">
 	<div class="row">
-	<div class="col-xs-offset-4 col-sm-offset-4 col-md-offset-2 col-lg-offset-2">
-	<form>
-		<div class="form-group">
-			<label for="UserName">UserName:</label>
-			<input id="UserName" type="text" class="form-control" placeholder="UserName" name="UserName">
+		<div class="col-xs-offset-3 col-xs-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading ">
+					<span>Sign In</span>
+				</div>
+				<div class="details">
+					<div  >
+						<label for="UserName">UserName:</label>
+						<input id="UserName" type="text" class="form-control" placeholder="UserName" name="UserName">
+					</div>
+					<div>
+						<label for="PassWord">Password:</label>
+						<input id="Password" type="text" class="form-control" placeholder="Password"
+						       name="Password"><br>
+					</div>
+					<div class="checkbox">
+						<label><input id="ConfirmPass" type="checkbox" name="remember"> Remember me</label>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			</div>
 		</div>
-		<div class="form-group">
-			<label for="PassWord">Password:</label>
-			<input id="Password" type="text" class="form-control" placeholder="Password" name="Password"><br>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" name="remember"> Remember me</label>
-		</div>
-		<button type="submit" class="btn btn-default">Submit</button>
-	</form>
-</div>
 	</div>
 </div>
 

@@ -1,16 +1,14 @@
-.Hbutton{
-	border:transparent;
-	color:white;
-	background-color:transparent ;
-	text-align:center;
-	margin-left :10px;
-	position:relative;
-	margin-top:4px;
-	margin-right:4px;
-}
 
 a{
 	text-decoration: none;
 	font-size:14px;
 
+}
+
+.navbar{
+	position:relative;
+}
+.brand{
+	margin-top:7%;
+	display:block;
 }
