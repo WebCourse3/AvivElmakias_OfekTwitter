@@ -1,4 +1,3 @@
-
 a{
 	text-decoration: none;
 	font-size:14px;
@@ -9,6 +8,15 @@ a{
 	position:relative;
 }
 .brand{
-	margin-top:7%;
+	margin-top:2%;
 	display:block;
+}
+
+.avatars img{
+	width:48px;
+	height:48px;
+}
+#ofekimg{
+	width:15%!important;
+	height:15%!important;
 }

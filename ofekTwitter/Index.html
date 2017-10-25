@@ -11,12 +11,10 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<img class="pull-left brand" id="ofekimg" class="img-responsive" src="../images/ofek.png" width="30"
-			     height="30">
+			<img class="pull-left brand" id="ofekimg" src="../images/ofek.png">
 			<a class="navbar-brand" href="../ofekTwitter/Index.html">OfekTwitter</a>
 		</div>
-
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
 					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
@@ -28,62 +26,45 @@
 					<a href="Users.html">Users</a>
 				</li>
 			</ul>
-
-
 		</div>
 	</div>
 </nav>
-
-<div class="container">
+<div class="container" id="tweets">
 	<div class="row">
 		<div>
 			<label for="Comment"></label>
 			<input id="Comment" type="text" class="form-control" placeholder="Tweet Comment.." name="Comment">
-			<button id="publish" class="btn-primary right" type="button">publish</button>
+			<button id="publish" class="btn-primary right" onclick="publishButton()" type="button">publish</button>
 		</div>
 	</div>
 	<div class="row post">
-		<img  src="../images/User.png" width="48" height="48">
-		<ul>
-			<li><b>James Bond says:</b></li>
-			<li>blabla</li>
-		</ul>
+		<img src="../images/User.png">
+			<div class="person">James Bond says:</div>
+			<div>blabla</div>
 	</div>
 	<div class="row post">
-		<img  src="../images/User.png" width="48" height="48">
-		<ul>
-			<li><b>James Bond says:</b></li>
-			<li>bond, james bond</li>
-		</ul>
+		<img src="../images/User.png">
+		<div class="person">James Bond says:</div>
+			<div>bond, james bond</div>
 	</div>
 	<div class="row post">
-		<img  src="../images/User.png" width="48" height="48">
-		<ul>
-			<li><b>Albert Einstein says:</b>:</li>
-			<li>E=mc^2</li>
-		</ul>
+		<img src="../images/User.png">
+			<div class="person">Albert Einstein says:</div>
+			<div>E=mc^2</div>
 	</div>
 	<div class="row post">
-		<img  src="../images/User.png" width="48" height="48">
-		<ul>
-			<li><b>Bill Gates says:</b></li>
-			<li>I think 64 bytes will be enough for everyone</li>
-		</ul>
+		<img src="../images/User.png">
+			<div class="person">Bill Gates says:</div>
+		<div>I think 64 bytes will be enough for everyone</div>
 	</div>
 	<div class="row post">
-		<img  src="../images/User.png" width="48" height="48">
-		<ul>
-			<li><b><b>Frodo says</b></b></li>
-			<li>My precious</li>
-		</ul>
+		<img src="../images/User.png">
+		<div class="person">Frodo says</div>
+			<div>My precious</div>
 	</div>
 
 </div>
-<div class="chat">
+<script type="text/javascript " src="../JS/Index.js"></script>
 
-
-
-
-</div>
 </body>
 </html>
