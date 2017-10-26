@@ -3,15 +3,21 @@ var tweetList=[
 	{username: 'Elvis', text: 'this exercise is really easy!'},
 	{username: 'Mimi', text: 'I want to go to sleep'}
 ];
-Document.ready
+var i=0;
+function readyMessage(){
+	var length= tweetList.length;
 
-function publishButton() {
+		if(i<length) {
+			publishComment(tweetList[i].username, tweetList[i].text);
+			i++;
+		}
+}
+function publishComment(userName , comment) {
 	var tweetText = document.getElementById('Comment');
 	var tweets = document.getElementById('tweets');
-	var newTweet=createNewTweet('James bond',tweetText.value);
+	var newTweet=createNewTweet(userName,comment);
 	tweets.appendChild(newTweet);
 	tweetText.value="";
-
 }
 
 function createImg(src) {
