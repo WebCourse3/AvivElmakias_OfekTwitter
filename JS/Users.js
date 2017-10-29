@@ -43,8 +43,8 @@ function createDiv() {
 
 function addUsers() {
 	var len = userList.length;
-	for (var i = 0; i<len;i++) {
-		var avatarDiv=createUser(userList[i].username);
+	for (var i = 0; i < len; i++) {
+		var avatarDiv = createUser(userList[i].username);
 		var container = document.getElementById('users');
 		container.appendChild(avatarDiv);
 	}
@@ -97,4 +97,22 @@ function removeFollower(elem) {
 
 }
 
+function displayFilteredList() {
+	var name = document.getElementById('UserName').value;
+	var filter = name.toUpperCase();
+	filterUsers(filter);
 
+}
+
+function filterUsers(name) {
+
+	var userArray = document.getElementsByClassName('avatars');
+	var len =userArray.length;
+	for (var i = 0; i < len; i++) {
+		if (userArray[i].childNodes[2].innerHTML.toUpperCase().indexOf(name) > -1) {
+			userArray[i].style.display = '';
+		} else {
+			userArray[i].style.display = 'none';
+		}
+	}
+}
