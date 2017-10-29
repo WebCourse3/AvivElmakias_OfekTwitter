@@ -20,3 +20,15 @@ a{
 	width:15%!important;
 	height:15%!important;
 }
+.test{
+	border-radius: 7px;
+	border-width: 3px;
+}
+
+.test-failed{
+	background-color: indianred;
+}
+
+.test-succeed{
+	background-color: greenyellow;
+}

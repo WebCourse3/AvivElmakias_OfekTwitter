@@ -107,7 +107,7 @@ function displayFilteredList() {
 function filterUsers(name) {
 
 	var userArray = document.getElementsByClassName('avatars');
-	var len =userArray.length;
+	var len = userArray.length;
 	for (var i = 0; i < len; i++) {
 		if (userArray[i].childNodes[2].innerHTML.toUpperCase().indexOf(name) > -1) {
 			userArray[i].style.display = '';
@@ -116,3 +116,5 @@ function filterUsers(name) {
 		}
 	}
 }
+
+

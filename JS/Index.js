@@ -4,6 +4,9 @@ var tweetList=[
 	{username: 'Mimi', text: 'I want to go to sleep'}
 ];
 var i=0;
+document.getElementById('publish').addEventListener('click', function() {
+	readyMessage();
+});
 function readyMessage(){
 	var length= tweetList.length;
 
@@ -48,5 +51,6 @@ function createDiv() {
 function addClass(divElement , className) {
 	 divElement.classList.add(className);
 	 return divElement;
-
 }
+
+
