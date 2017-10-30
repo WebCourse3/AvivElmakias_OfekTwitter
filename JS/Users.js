@@ -102,6 +102,7 @@ function displayFilteredList() {
 	var filter = name.toUpperCase();
 	filterUsers(filter);
 
+
 }
 
 function filterUsers(name) {

@@ -39,9 +39,14 @@ function createNewTweet(publisherName,tweetText) {
 	commentingPerson.innerHTML=publisherName;
 	newTweet.appendChild(commentingPerson);
 	var sentMessage = createDiv();
+	var divs = $(".post").map(func);
 	sentMessage.innerHTML=tweetText;
 	newTweet.appendChild(sentMessage);
 	return newTweet;
+}
+
+function func(div){
+	div.classList.add('lala');
 }
 
 function createDiv() {
@@ -52,5 +57,7 @@ function addClass(divElement , className) {
 	 divElement.classList.add(className);
 	 return divElement;
 }
+
+
 
 

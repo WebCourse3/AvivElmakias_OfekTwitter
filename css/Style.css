@@ -1,34 +1,37 @@
-a{
+a {
 	text-decoration: none;
-	font-size:14px;
+	font-size: 14px;
 
 }
 
-.navbar{
-	position:relative;
-}
-.brand{
-	margin-top:2%;
-	display:block;
+.navbar {
+	position: relative;
 }
 
-.avatars img{
-	width:48px;
-	height:48px;
+.brand {
+	margin-top: 2%;
+	display: block;
 }
-#ofekimg{
-	width:15%!important;
-	height:15%!important;
+
+.avatars img {
+	width: 48px;
+	height: 48px;
 }
-.test{
+
+#ofekimg {
+	width: 15% !important;
+	height: 15% !important;
+}
+
+.test {
 	border-radius: 7px;
 	border-width: 3px;
 }
 
-.test-failed{
+.test-failed {
 	background-color: indianred;
 }
 
-.test-succeed{
+.test-succeed {
 	background-color: greenyellow;
 }
