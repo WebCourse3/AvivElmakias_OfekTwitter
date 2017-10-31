@@ -39,7 +39,7 @@ function createNewTweet(publisherName,tweetText) {
 	commentingPerson.innerHTML=publisherName;
 	newTweet.appendChild(commentingPerson);
 	var sentMessage = createDiv();
-	var divs = $(".post").map(func);
+	var divs = $("div img div");
 	sentMessage.innerHTML=tweetText;
 	newTweet.appendChild(sentMessage);
 	return newTweet;
