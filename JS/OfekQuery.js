@@ -3,10 +3,7 @@ function $(selector) {
 }
 
 var ofekQuery = function (selector) {
-	var spaceIndex = selector.indexOf(' ');
-	var searchTag = selector.substring(0, spaceIndex);
-	this.elements= getElements(searchTag);
-
+	this.elements=getElements(selector);
 	function getElements(selector) {
 		var isById = true;
 		switch (selector.charAt(0)) {
@@ -19,18 +16,34 @@ var ofekQuery = function (selector) {
 				return classElements;
 				break;
 			default:
-				let tagElements = Array.from(document.getElementsByTagName(selector));
+				let tagElements;
+				if (selector.search(' ') > -1) {
+					var getArray = selector.split(' ');
+					tagElements= Array.from(document.getElementsByTagName(getArray[getArray.length-1]));
+					var len = getArray.length-2;
+					for (var i =len; i >=0; i--) {
+						tagElements=getEleWithChildren(tagElements,getArray[i]);
+
+					}
+				}
+				else
+					tagElements = Array.from(document.getElementsByTagName(selector));
 				isById = false;
 				return tagElements;
 				break;
 		}
 	}
 
-	// function searchChildren(elements,selector){
-	//
-	//
-	// }
+	function getEleWithChildren(tagCollection,parentTag) {
+		var elements = []
+			for(var j=0 ; j<tagCollection.length;j++){
+				if(tagCollection[j].parentNode.nodeName===parentTag.toUpperCase()){
+					elements.push(tagCollection[j]);
+				}
+			}
+			return elements;
 
+		}
 
 
 	this.addClass = function (className) {
