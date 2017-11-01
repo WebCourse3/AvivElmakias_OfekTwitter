@@ -1,0 +1,37 @@
+a {
+	text-decoration: none;
+	font-size: 14px;
+
+}
+
+.navbar {
+	position: relative;
+}
+
+.brand {
+	margin-top: 2%;
+	display: block;
+}
+
+.avatars img {
+	width: 48px;
+	height: 48px;
+}
+
+#ofekimg {
+	width: 15% !important;
+	height: 15% !important;
+}
+
+.test {
+	border-radius: 7px;
+	border-width: 3px;
+}
+
+.test-failed {
+	background-color: indianred;
+}
+
+.test-succeed {
+	background-color: greenyellow;
+}

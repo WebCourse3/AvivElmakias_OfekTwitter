@@ -1,47 +1,21 @@
-.heading{
-	background-color :rgb(22,80,230);}
-
-#OfekTwitter{
-	color: white ;
-	font-size:20px;
-}
-
-.Hbutton{
-	border:transparent;
-	color:white;
-	background-color:transparent ;
-	text-align:center;
-	margin-left :10px;
+#publish{
 	float:right;
-	position:relative;
-
-
-
-}
-.filter{
-	position: relative;
-	top:20px;
-	left:70px;
+	margin-top:3px;
 }
 
-.avatars{
+#Comment{
+	height:100px;}
+
+.post img {
 	float:left;
-	margin-left:50px;
-	margin-top:40px;
-	text-align: center}
-
-span{
-	font-size:12px;
+	margin-right: 1%;
 }
-
-#followees{
-	font-size:20px;
-	float:right;
-	position:relative;
-	bottom: 200px;
-	right:200px;
+.post ul li {
+	list-style-type: none;
 }
-a{
-	text-decoration: none;
-	font-size:14px;
+.post{
+	margin-top:10px;
+}
+.person{
+	font-weight: 600;
 }

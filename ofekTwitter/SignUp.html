@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 	<title>Sign In</title>
-	<link rel="stylesheet" type="text/css" href="../css/SignIn.css">
+	<link rel="stylesheet" type="text/css" href="../css/SignUp.css">
 	<link rel="stylesheet" type="text/css" href="../../WebProj/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/Style.css">
 </head>
@@ -38,22 +38,24 @@
 		<div class="col-xs-offset-3 col-xs-6">
 			<div class="panel panel-primary">
 				<div class="panel-heading ">
-					<span>Sign In</span>
+					<span>Sign Up</span>
 				</div>
 				<div class="details">
-					<div>
+					<div >
 						<label for="UserName">UserName:</label>
 						<input id="UserName" type="text" class="form-control" placeholder="UserName" name="UserName">
 					</div>
 					<div>
 						<label for="PassWord">Password:</label>
 						<input id="Password" type="text" class="form-control" placeholder="Password"
-						       name="Password"><br>
+						       name="Password">
 					</div>
-					<div class="checkbox">
-						<label><input id="ConfirmPass" type="checkbox" name="remember"> Remember me</label>
+					<div>
+						<label for="ConfirmPass">Confirm-Password:</label>
+						<input id="ConfirmPass" type="text" class="form-control" placeholder="Re-Enter Password"
+						       name="Password">
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
+					<button id="submit" type="submit" class="btn btn-default">Submit</button>
 				</div>
 			</div>
 		</div>

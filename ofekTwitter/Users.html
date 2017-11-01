@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/Users.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../WebProj/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Style.css">
+	<link rel="stylesheet" href="../css/Users.css">
 	<title>Index</title>
+
 </head>
 <body>
-<header class="heading">
-	<img src="../images/ofek.png" width="20" height="20">
-	<span id="OfekTwitter">Ofek Twitter</span>
-	<a href="../ofekTwitter/index.html" class="Hbutton">Users</a>
-	<a href="../ofekTwitter/SignIn.html" class="Hbutton">SignIn</a>
-	<a href="../ofekTwitter/Users.html" class="Hbutton">Chat</a>
-</header>
-<div>
-	<input id="comment" type="text" placeholder="tweet comment.." >
-	<button type="button">publish</button>
-</div>
-<div class="chat">
-	<img id="immg" src="../images/User.png" width="55" height="55">
-	<span id="JBcomment">James Bond says:<br>blabla</span>
 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class="pull-left brand " id="ofekimg" src="../images/ofek.png">
+			<a class="navbar-brand" href="Index.html">OfekTwitter</a>
+		</div>
 
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/SignIn.html">SignIn</a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/Users.html">Users</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="filter">
+	<label for="userName">Filter By:</label>
+	<input id="UserName" type="text" name="filter-by" placeholder="UserName" onkeyup="displayFilteredList();">
+	<button type="button">Ok</button>
+	<br><br>
 </div>
+<div class="row ">
+	<div id="users" class="col-xs-9">
+	</div>
+	<div class="col-xs-2 followees panel panel-default ">
+		<div id="foloweesPics" class="row">
+			<h4>Followees</h4>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript " src="../JS/Users.js"></script>
 </body>
 </html>

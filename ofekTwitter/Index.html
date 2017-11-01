@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../css/Index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="../css/Index.css">
+	<link rel="stylesheet" type="text/css" href="../../WebProj/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Style.css">
+
 </head>
 <body>
-<header class="heading">
-	<img src="../images/ofek.png" width="20" height="20">
-	<span id="OfekTwitter">Ofek Twitter</span>
-	<a href="../ofekTwitter/index.html" class="Hbutton">Users</a>
-	<a href="../ofekTwitter/SignIn.html" class="Hbutton">SignIn</a>
-	<a href="../ofekTwitter/Users.html" class="Hbutton">Chat</a>
-</header>
-<div class="filter">
-	filter by: <input id="inField" type="text" name="filter-by" placeholder="UserName">
-	<button type="button">Ok</button> <br><br>
-</div>
+<label>dsgisdogsdofg</label>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class="pull-left brand" id="ofekimg" src="../images/ofek.png">
+			<a class="navbar-brand" href="../ofekTwitter/Index.html">OfekTwitter</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="../ofekTwitter/SignUp.html">SignUp <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="../ofekTwitter/SignIn.html">SignIn</a>
+				</li>
+				<li>
+					<a href="Users.html">Users</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container" id="tweets">
+	<div class="row">
+		<div>
+			<label for="Comment"></label>
+			<input id="Comment" type="text" class="form-control" placeholder="Tweet Comment.." name="Comment">
+			<button id="publish" class="btn-primary right" type="button">publish</button>
+		</div>
+	</div>
+	<div class="row post">
+		<img src="../images/User.png">
+			<div class="person">James Bond says:</div>
+			<div>blabla</div>
+	</div>
+	<div class="row post">
+		<img src="../images/User.png">
+		<div class="person">James Bond says:</div>
+			<div>bond, james bond</div>
+	</div>
+	<div class="row post">
+		<img src="../images/User.png">
+			<div class="person">Albert Einstein says:</div>
+			<div>E=mc^2</div>
+	</div>
+	<div class="row post">
+		<img src="../images/User.png">
+			<div class="person">Bill Gates says:</div>
+		<div>I think 64 bytes will be enough for everyone</div>
+	</div>
+	<div class="row post">
+		<img src="../images/User.png">
+		<div class="person">Frodo says</div>
+			<div>My precious</div>
+	</div>
 
- <div class="avatars">
-		 <img src="../images/User.png" width="55" height="55"><br>
-		 <button type="button">Follow</button><br>
-		 <span> Marty-McFly</span>
- </div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Follow</button><br>
-				<span> James-Bond</span>
-			</div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Unollow</button><br>
-				<span> Janis-Joplin</span>
-			</div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Follow</button><br>
-				<span> Mark-Twain</span>
-			</div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Follow</button><br>
-				<span> Albert Einstein</span>
-			</div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Follow</button><br>
-				<span> Bill-Gates</span>
-			</div>
-			<div class="avatars">
-				<img src="../images/User.png" width="55" height="55"><br>
-				<button type="button">Follow</button><br>
-				<span> Frodo</span>
-			</div>
-<div class="followees">
-	<span id="followees"><b>Followees!!</b></span>
 </div>
-
+<script type="text/javascript " src="../JS/Index.js"></script>
+<script src="../JS/OfekQuery.js"></script>
 
 </body>
 </html>
